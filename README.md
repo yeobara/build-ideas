@@ -9,6 +9,7 @@
 | 💡 | [LinkedIn + Instagram 자동 포스팅](#linkedin--instagram-자동-포스팅) | 아티클 읽고 대화 후 인사이트 자동 포스팅 |
 | 💡 | [카드 이미지 자동 생성](#카드-이미지-자동-생성) | 대화 요약을 인스타 카드 이미지로 변환 |
 | 💡 | [PPT 자동 생성](#ppt-자동-생성) | 목업/설명 기반으로 파워포인트 자동 생성 |
+| 💡 | [인스타툰 제작](#인스타툰-제작) | AI로 캐릭터 생성 + 일관성 유지하며 인스타툰 제작 |
 
 ---
 
@@ -82,6 +83,35 @@ API가 지원되는 뉴스레터/블로그 플랫폼 비교:
 **현재 방향**
 - LinkedIn (짧은 인사이트 포스트) + Hashnode 또는 Beehiiv (긴 글) 병행 고려 중
 - 주말에 각 플랫폼 API 문서 및 요금제 확인 필요
+
+---
+
+### 인스타툰 제작
+
+**아이디어 배경**
+AI로 캐릭터를 만들고 일관성을 유지하면서 인스타툰 제작. 간결한 그림체, 배경 생략.
+
+**워크플로우**
+1. Midjourney Niji로 캐릭터 시트 생성 (정면, 옆면, 주요 표정)
+2. `--cref [캐릭터 시트]` 로 매 컷마다 캐릭터 일관성 유지
+3. `white background, no background` 프롬프트로 배경 제거
+4. Canva에서 컷 배치 + 말풍선 + 텍스트 추가
+5. Instagram 업로드
+
+**스타일 키워드**
+- `flat illustration, simple line art`
+- `webtoon style, minimal character design`
+- `2D cartoon, clean lines`
+- `white background, no background`
+
+**툴**
+- Midjourney Niji (캐릭터 생성, 수동)
+- `--cref` (Character Reference, 일관성 유지)
+- Canva (컷 편집)
+
+**참고**
+- Midjourney 공식 API 없음 → 수동으로 운영
+- 자동화 원할 경우 Stable Diffusion + Niji 스타일 LoRA로 전환 가능
 
 ---
 
